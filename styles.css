@@ -189,6 +189,24 @@ ul {
   margin-top: 2rem;
 }
 
+.video-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    }
+
+  video {
+    width: 180px;
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(255, 100, 0, 0.7);
+    animation: vibra 0.4s infinite alternate;
+  }
+
+  @keyframes vibra {
+    0% { box-shadow: 0 0 20px rgba(255,100,0,0.4); transform: scale(1); }
+    100% { box-shadow: 0 0 40px rgba(255,100,0,1); transform: scale(1.02); }
+  }
+
+
 /* ---------------------------
    💬 Contacto flotante
 ---------------------------- */
@@ -376,3 +394,4 @@ ul {
     font-size: 0.9rem;
   }
 }
+
